@@ -74,3 +74,7 @@
 2025-12-20 10:14:40,971 - INFO - Training data SMOTE bilan balanslandi
 2025-12-20 10:16:42,241 - INFO - Barcha modellar train qilindi va metriklar hisoblandi.
 2025-12-20 10:16:42,245 - INFO - Eng yaxshi model (Logistic Regression) saqlandi: C:\Users\Rasulbek907\Desktop\Hotel Booking Cancellation Prediction\Models\Logistic_Regression_model.pkl
+2025-12-20 11:53:18,880 - INFO - Fayl o'qildi: 119390 satr, 33 ustun
+2025-12-20 11:54:02,161 - INFO - Fayl o'qildi: 119390 satr, 33 ustun
+2025-12-20 12:12:02,090 - INFO - Fayl o'qildi: 119390 satr, 33 ustun
+2025-12-20 16:48:34,583 - INFO - Fayl o'qildi: 119390 satr, 33 ustun
