@@ -1,3 +1,4 @@
+
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 
@@ -19,7 +20,6 @@ class Cleaner:
             X[col] = X[col].fillna(value)
         return X
 
-
 class Encoder:
     def __init__(self, max_unique=5):
         self.max_unique = max_unique
@@ -28,7 +28,6 @@ class Encoder:
 
     def fit(self, X):
         self.cat_cols = X.select_dtypes(include='object').columns
-
         for col in self.cat_cols:
             if X[col].nunique() <= self.max_unique:
                 self.dummy_cols[col] = X[col].unique().tolist()
@@ -36,7 +35,6 @@ class Encoder:
 
     def transform(self, X):
         X = X.copy()
-
         for col in self.cat_cols:
             if col in self.dummy_cols:
                 for val in self.dummy_cols[col]:
@@ -44,9 +42,8 @@ class Encoder:
                 X.drop(columns=[col], inplace=True)
             else:
                 X[col] = X[col].astype('category').cat.codes
-
         return X
-    
+
 class Scaler:
     def __init__(self):
         self.scaler = StandardScaler()
@@ -61,8 +58,3 @@ class Scaler:
         X = X.copy()
         X[self.num_cols] = self.scaler.transform(X[self.num_cols])
         return X
-
-
-
-
-
