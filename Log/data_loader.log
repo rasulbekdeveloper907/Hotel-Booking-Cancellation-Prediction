@@ -57,3 +57,20 @@
 2025-12-20 09:21:02,729 - INFO - Fayl muvaffaqiyatli o'qildi. Sat\u0131rlar soni: 119390 ustunlar soni: 33
 2025-12-20 09:27:36,085 - INFO - CSV fayl o'qilmoqda:...
 2025-12-20 09:27:36,452 - INFO - Fayl muvaffaqiyatli o'qildi. Sat\u0131rlar soni: 119390 ustunlar soni: 33
+2025-12-20 09:42:12,004 - INFO - CSV fayl o'qilmoqda:...
+2025-12-20 09:42:12,392 - INFO - Fayl muvaffaqiyatli o'qildi. Sat\u0131rlar soni: 119390 ustunlar soni: 33
+2025-12-20 10:04:14,182 - INFO - CSV fayl o'qilmoqda:...
+2025-12-20 10:04:14,589 - INFO - Fayl muvaffaqiyatli o'qildi. Sat\u0131rlar soni: 119390 ustunlar soni: 33
+2025-12-20 10:04:35,235 - INFO - Modellar tayyorlandi va natijalar jadvalda chiqarildi.
+2025-12-20 10:05:32,361 - INFO - CSV fayl o'qilmoqda:...
+2025-12-20 10:05:32,961 - INFO - Fayl muvaffaqiyatli o'qildi. Sat\u0131rlar soni: 119390 ustunlar soni: 33
+2025-12-20 10:05:51,284 - INFO - Modellar tayyorlandi va natijalar hisoblandi.
+2025-12-20 10:09:14,545 - INFO - Eng yaxshi model (Logistic Regression) saqlandi: C:\Users\Rasulbek907\Desktop\Hotel Booking Cancellation Prediction\Models\Simple_Models\Logistic_Regression_model.pkl
+2025-12-20 10:12:12,955 - INFO - CSV fayl o'qilmoqda:...
+2025-12-20 10:12:13,423 - INFO - Fayl muvaffaqiyatli o'qildi. Sat\u0131rlar soni: 119390, ustunlar soni: 33
+2025-12-20 10:12:17,675 - INFO - Training data SMOTE bilan balanslandi
+2025-12-20 10:14:34,328 - INFO - CSV fayl o'qilmoqda:...
+2025-12-20 10:14:34,772 - INFO - Fayl muvaffaqiyatli o'qildi. Sat\u0131rlar soni: 119390, ustunlar soni: 33
+2025-12-20 10:14:40,971 - INFO - Training data SMOTE bilan balanslandi
+2025-12-20 10:16:42,241 - INFO - Barcha modellar train qilindi va metriklar hisoblandi.
+2025-12-20 10:16:42,245 - INFO - Eng yaxshi model (Logistic Regression) saqlandi: C:\Users\Rasulbek907\Desktop\Hotel Booking Cancellation Prediction\Models\Logistic_Regression_model.pkl
