@@ -18,6 +18,18 @@ Ushbu loyiha **Supervised Machine Learning (SML) – Binary Classification** tur
   - 0 → Buyurtma bekor qilinmagan  
   - 1 → Buyurtma bekor qilingan  
 
+### 3️⃣ `is_canceled` uchun eng muhim metrik
+
+✅ **F1-Score** eng muhim, chunki:
+
+- Dataset imbalanced bo‘lishi mumkin (bekor qilinadigan bookinglar kamroq).  
+- Precision va Recall o‘rtasidagi balansni hisobga oladi.  
+- Model nafaqat bekor qilinadigan bookinglarni topishi, balki noto‘g‘ri signal bermasligi kerak.  
+
+**Masalan:**  
+- Agar hotel har bir bekor qilishni 100% topishga harakat qilsa (Recall = 1), lekin noto‘g‘ri “bekor” deb aytsa (Precision past bo‘lsa), foyda kamayadi.  
+- F1-Score bu ikki jihatni birlashtirib, eng real tavsiya beruvchi metrik bo‘ladi.
+
 
 ## 📊 Dataset haqida
 Datasetda **32 ustun** mavjud. Asosiy ustunlar:  
