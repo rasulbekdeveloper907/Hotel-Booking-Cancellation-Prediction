@@ -171,3 +171,28 @@
 2025-12-25 06:15:26,410 - INFO - ===== STACKING CLASSIFIER OPTUNA TUNING BOSHLANDI =====
 2025-12-25 08:00:55,078 - INFO - ===== OPTIMALLASHTIRILGAN STACKING TUNING BOSHLANDI =====
 2025-12-25 08:01:40,852 - INFO - ===== OPTIMALLASHTIRILGAN STACKING TUNING BOSHLANDI =====
+2025-12-25 08:03:50,677 - INFO - ===== FAST STACKING TUNING (15 TRIALS) BOSHLANDI =====
+2025-12-25 08:12:12,283 - INFO - FINAL MODEL - F1: 0.8007, Acc: 0.8540, Prec: 0.8220, Rec: 0.7804, AUC: 0.9262
+2025-12-25 08:12:12,283 - INFO - Best Params: {'rf_n_estimators': 82, 'rf_max_depth': 12, 'dt_max_depth': 10, 'knn_n_neighbors': 6, 'knn_weights': 'distance'}
+2025-12-25 08:13:57,802 - INFO - ===== BASELINE MODELLAR BOSHLANDI =====
+2025-12-25 08:13:58,232 - INFO - Train dataset shape: (120518, 34), (120518,)
+2025-12-25 08:13:58,232 - INFO - Test dataset shape: (23878, 34), (23878,)
+2025-12-25 08:13:58,248 - INFO - \U0001f680 Baseline modellarni fit qilish va metriklarni hisoblash boshlandi...
+2025-12-25 08:13:58,251 - INFO - Model fit qilinmoqda: LogisticRegression
+2025-12-25 08:14:12,868 - INFO - LogisticRegression natijalari hisoblandi.
+2025-12-25 08:14:12,869 - INFO - Model fit qilinmoqda: RandomForest
+2025-12-25 08:14:32,764 - INFO - RandomForest natijalari hisoblandi.
+2025-12-25 08:14:32,764 - INFO - Model fit qilinmoqda: DecisionTree
+2025-12-25 08:14:34,353 - INFO - DecisionTree natijalari hisoblandi.
+2025-12-25 08:14:34,354 - INFO - Model fit qilinmoqda: KNeighbors
+2025-12-25 08:14:45,714 - INFO - KNeighbors natijalari hisoblandi.
+2025-12-25 08:14:45,726 - INFO - 
+             Model  Accuracy  Precision  Recall  F1-Score  ROC-AUC
+LogisticRegression    0.7837     0.7004  0.7415    0.7204   0.8705
+      RandomForest    0.8827     0.8718  0.8064    0.8378   0.9514
+      DecisionTree    0.8413     0.7850  0.7955    0.7902   0.8323
+        KNeighbors    0.7355     0.6238  0.7461    0.6795   0.8155
+2025-12-25 08:14:45,726 - INFO - ===== BASELINE MODELLAR TAMOM =====
+2025-12-25 08:20:50,393 - INFO - ===== RANDOM FOREST OPTUNA TUNING BOSHLANDI =====
+2025-12-25 08:22:43,918 - INFO - FINAL RF - F1: 0.8334, Acc: 0.8795, Prec: 0.8672, Rec: 0.8021, AUC: 0.9513
+2025-12-25 08:22:43,918 - INFO - Best Params: {'n_estimators': 288, 'max_depth': 24, 'min_samples_split': 4, 'min_samples_leaf': 1, 'max_features': 'sqrt'}
