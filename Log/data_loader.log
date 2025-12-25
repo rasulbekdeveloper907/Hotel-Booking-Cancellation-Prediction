@@ -80,3 +80,94 @@
 2025-12-20 16:48:34,583 - INFO - Fayl o'qildi: 119390 satr, 33 ustun
 2025-12-22 18:27:19,880 - INFO - CSV fayl o'qilmoqda:...
 2025-12-22 18:27:20,236 - INFO - Fayl muvaffaqiyatli o'qildi. Sat\u0131rlar soni: 119390 ustunlar soni: 33
+2025-12-25 04:40:39,436 - INFO - ===== PREPROCESSED DATA LOADER BOSHLANDI =====
+2025-12-25 04:40:39,855 - INFO - Preprocessed datasetlar muvaffaqiyatli yuklandi
+2025-12-25 04:40:39,855 - INFO - X_train shape: (95512, 32)
+2025-12-25 04:40:39,855 - INFO - X_test  shape: (23878, 32)
+2025-12-25 04:40:39,855 - INFO - y_train shape: (95512, 1)
+2025-12-25 04:40:39,855 - INFO - y_test  shape: (23878, 1)
+2025-12-25 04:40:39,856 - INFO - DLP tekshiruvlar muvaffaqiyatli o‘tdi
+2025-12-25 04:40:39,856 - INFO - ===== DATA LOADER YAKUNLANDI =====
+2025-12-25 05:13:24,738 - INFO - ===== PREPROCESSED DATA LOADER BOSHLANDI =====
+2025-12-25 05:13:25,115 - INFO - Preprocessed datasetlar muvaffaqiyatli yuklandi
+2025-12-25 05:13:25,115 - INFO - X_train shape: (95512, 32)
+2025-12-25 05:13:25,115 - INFO - X_test  shape: (23878, 32)
+2025-12-25 05:13:25,115 - INFO - y_train shape: (95512, 1)
+2025-12-25 05:13:25,115 - INFO - y_test  shape: (23878, 1)
+2025-12-25 05:13:25,115 - INFO - DLP tekshiruvlar muvaffaqiyatli o‘tdi
+2025-12-25 05:13:25,115 - INFO - ===== DATA LOADER YAKUNLANDI =====
+2025-12-25 05:18:28,373 - INFO - ===== FEATURE ENGINEERED DATA LOADER BOSHLANDI =====
+2025-12-25 05:18:28,836 - INFO - Feature engineered datasetlar muvaffaqiyatli yuklandi
+2025-12-25 05:18:28,836 - INFO - X_train shape: (95512, 44)
+2025-12-25 05:18:28,836 - INFO - X_test  shape: (23878, 44)
+2025-12-25 05:18:28,836 - INFO - y_train shape: (95512, 1)
+2025-12-25 05:18:28,836 - INFO - y_test  shape: (23878, 1)
+2025-12-25 05:18:28,836 - INFO - \u2705 DLP tekshiruvlar muvaffaqiyatli o‘tdi
+2025-12-25 05:18:28,836 - INFO - ===== FEATURE ENGINEERED DATA LOADER YAKUNLANDI =====
+2025-12-25 05:41:46,494 - INFO - ===== PREPROCESSED DATA LOADER BOSHLANDI =====
+2025-12-25 05:41:46,903 - INFO - Preprocessed datasetlar muvaffaqiyatli yuklandi
+2025-12-25 05:41:46,903 - INFO - X_train shape: (95512, 32)
+2025-12-25 05:41:46,903 - INFO - X_test  shape: (23878, 32)
+2025-12-25 05:41:46,903 - INFO - y_train shape: (95512, 1)
+2025-12-25 05:41:46,904 - INFO - y_test  shape: (23878, 1)
+2025-12-25 05:41:46,904 - INFO - DLP tekshiruvlar muvaffaqiyatli o‘tdi
+2025-12-25 05:41:46,904 - INFO - ===== DATA LOADER YAKUNLANDI =====
+2025-12-25 05:44:03,094 - INFO - ===== FEATURE SELECTED DATA LOADER BOSHLANDI =====
+2025-12-25 05:44:03,468 - INFO - Feature selected datasetlar muvaffaqiyatli yuklandi
+2025-12-25 05:44:03,469 - INFO - X_train shape: (95512, 34)
+2025-12-25 05:44:03,469 - INFO - X_test  shape: (23878, 34)
+2025-12-25 05:44:03,469 - INFO - y_train shape: (95512,)
+2025-12-25 05:44:03,469 - INFO - y_test  shape: (23878,)
+2025-12-25 05:44:03,469 - INFO - DLP tekshiruvlar muvaffaqiyatli o‘tdi
+2025-12-25 05:44:03,469 - INFO - ===== FEATURE SELECTED DATA LOADER YAKUNLANDI =====
+2025-12-25 05:54:00,062 - INFO - ===== BASELINE MODELLAR VIZUALIZATSIYA BOSHLANDI =====
+2025-12-25 05:56:13,362 - INFO - ===== BASELINE MODELLAR BOSHLANDI =====
+2025-12-25 05:56:13,794 - INFO - Train dataset shape: (120518, 34), (120518,)
+2025-12-25 05:56:13,794 - INFO - Test dataset shape: (23878, 34), (23878,)
+2025-12-25 05:56:13,794 - INFO - \U0001f680 Baseline modellarni fit qilish va metriklarni hisoblash boshlandi...
+2025-12-25 05:56:13,794 - INFO - Model fit qilinmoqda: LogisticRegression
+2025-12-25 05:56:29,256 - INFO - LogisticRegression - Accuracy: 0.7837, Precision: 0.7004, Recall: 0.7415, F1: 0.7204, ROC-AUC: 0.8705
+2025-12-25 05:56:29,256 - INFO - Model fit qilinmoqda: RandomForest
+2025-12-25 05:56:49,936 - INFO - RandomForest - Accuracy: 0.8827, Precision: 0.8718, Recall: 0.8064, F1: 0.8378, ROC-AUC: 0.9514
+2025-12-25 05:56:49,936 - INFO - Model fit qilinmoqda: DecisionTree
+2025-12-25 05:56:51,669 - INFO - DecisionTree - Accuracy: 0.8413, Precision: 0.7850, Recall: 0.7955, F1: 0.7902, ROC-AUC: 0.8323
+2025-12-25 05:56:51,669 - INFO - Model fit qilinmoqda: SVC
+2025-12-25 05:57:38,057 - INFO - ===== BASELINE MODELLAR BOSHLANDI =====
+2025-12-25 05:57:38,469 - INFO - Train dataset shape: (120518, 34), (120518,)
+2025-12-25 05:57:38,470 - INFO - Test dataset shape: (23878, 34), (23878,)
+2025-12-25 05:57:38,470 - INFO - \U0001f680 Baseline modellarni fit qilish va metriklarni hisoblash boshlandi...
+2025-12-25 05:57:38,470 - INFO - Model fit qilinmoqda: LogisticRegression
+2025-12-25 05:57:55,186 - INFO - LogisticRegression - Accuracy: 0.7837, Precision: 0.7004, Recall: 0.7415, F1: 0.7204, ROC-AUC: 0.8705
+2025-12-25 05:57:55,186 - INFO - Model fit qilinmoqda: RandomForest
+2025-12-25 05:58:15,787 - INFO - RandomForest - Accuracy: 0.8827, Precision: 0.8718, Recall: 0.8064, F1: 0.8378, ROC-AUC: 0.9514
+2025-12-25 05:58:15,788 - INFO - Model fit qilinmoqda: DecisionTree
+2025-12-25 05:58:17,387 - INFO - DecisionTree - Accuracy: 0.8413, Precision: 0.7850, Recall: 0.7955, F1: 0.7902, ROC-AUC: 0.8323
+2025-12-25 05:58:17,387 - INFO - Model fit qilinmoqda: KNeighbors
+2025-12-25 05:58:30,841 - INFO - KNeighbors - Accuracy: 0.7355, Precision: 0.6238, Recall: 0.7461, F1: 0.6795, ROC-AUC: 0.8155
+2025-12-25 05:58:30,842 - INFO - ===== BASELINE MODELLAR TAMOM =====
+2025-12-25 05:58:38,858 - INFO - ===== BASELINE MODELLAR VIZUALIZATSIYA BOSHLANDI =====
+2025-12-25 06:04:26,607 - INFO - ===== ENSEMBLE BASELINE MODELLAR BOSHLANDI =====
+2025-12-25 06:04:27,022 - INFO - Train dataset shape: (120518, 34), (120518,)
+2025-12-25 06:04:27,022 - INFO - Test dataset shape: (23878, 34), (23878,)
+2025-12-25 06:04:55,100 - INFO - ===== ENSEMBLE BASELINE MODELLAR BOSHLANDI =====
+2025-12-25 06:04:55,513 - INFO - Train dataset shape: (120518, 34), (120518,)
+2025-12-25 06:04:55,513 - INFO - Test dataset shape: (23878, 34), (23878,)
+2025-12-25 06:04:55,513 - INFO - \U0001f680 Ensemble modellarni fit qilish va metriklarni hisoblash boshlandi...
+2025-12-25 06:04:55,514 - INFO - Model fit qilinmoqda: Voting_Classifier
+2025-12-25 06:05:50,520 - INFO - Voting_Classifier - Accuracy: 0.8736, Precision: 0.8425, Recall: 0.8163, F1: 0.8292, ROC-AUC: 0.9426
+2025-12-25 06:05:50,520 - INFO - Model fit qilinmoqda: Stacking_Classifier
+2025-12-25 06:09:25,556 - INFO - Stacking_Classifier - Accuracy: 0.8815, Precision: 0.8568, Recall: 0.8220, F1: 0.8391, ROC-AUC: 0.9482
+2025-12-25 06:09:25,556 - INFO - Model fit qilinmoqda: Bagging_RandomForest
+2025-12-25 06:10:32,603 - INFO - Bagging_RandomForest - Accuracy: 0.8798, Precision: 0.8677, Recall: 0.8023, F1: 0.8337, ROC-AUC: 0.9507
+2025-12-25 06:10:32,603 - INFO - Model fit qilinmoqda: GradientBoosting
+2025-12-25 06:11:02,766 - INFO - GradientBoosting - Accuracy: 0.8502, Precision: 0.8111, Recall: 0.7836, F1: 0.7971, ROC-AUC: 0.9288
+2025-12-25 06:11:02,766 - INFO - Model fit qilinmoqda: AdaBoost
+2025-12-25 06:11:16,137 - INFO - AdaBoost - Accuracy: 0.8273, Precision: 0.7528, Recall: 0.8045, F1: 0.7778, ROC-AUC: 0.9090
+2025-12-25 06:11:16,137 - INFO - ===== ENSEMBLE BASELINE MODELLAR TAMOM =====
+2025-12-25 06:13:46,285 - INFO - ===== STACKING CLASSIFIER BOSHLANDI =====
+2025-12-25 06:13:46,691 - INFO - Train dataset shape: (120518, 34), (120518,)
+2025-12-25 06:13:46,691 - INFO - Test dataset shape: (23878, 34), (23878,)
+2025-12-25 06:13:46,691 - INFO - \U0001f680 StackingClassifier fit qilinmoqda...
+2025-12-25 06:15:26,410 - INFO - ===== STACKING CLASSIFIER OPTUNA TUNING BOSHLANDI =====
+2025-12-25 08:00:55,078 - INFO - ===== OPTIMALLASHTIRILGAN STACKING TUNING BOSHLANDI =====
+2025-12-25 08:01:40,852 - INFO - ===== OPTIMALLASHTIRILGAN STACKING TUNING BOSHLANDI =====
