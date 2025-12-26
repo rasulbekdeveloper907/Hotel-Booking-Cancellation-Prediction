@@ -1,0 +1,13 @@
+cat << EOF > .gitignore
+venv/
+__pycache__/
+*.pyc
+.env
+data/raw/*
+data/processed/*
+models/
+*.joblib
+*.pkl
+.DS_Store
+.ipynb_checkpoints/
+EOF
