@@ -4,10 +4,10 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from pathlib import Path
 
-MODEL_PATH = Path("models/baseline/best_baseline_model.joblib")
+MODEL_PATH = Path("Models\Advanced\Stacking_Classifier_best_model.joblib")
 
 app = FastAPI(
-    title="Soccer Goals Prediction API",
+    title=" Hotel Booking Cancelled Prediction API",
     version="1.0"
 )
 
@@ -30,28 +30,48 @@ def load_model():
 # --------------------------------------------------
 # Schemas
 # --------------------------------------------------
-class PlayerInput(BaseModel):
-    games: int
-    time: int
-    xG: float
-    assists: int
-    xA: float
-    shots: int
-    key_passes: int
-    yellow_cards: int
-    red_cards: int
-    position: str
-    team_title: str
-    npg: int
-    npxG: float
-    xGChain: float
-    xGBuildup: float
-    league: str
-    season: int
+from pydantic import BaseModel
+from typing import Optional
+
+class HotelBookingInput(BaseModel):
+    hotel: str
+    lead_time: int
+    arrival_date_year: int
+    arrival_date_month: str
+    arrival_date_week_number: int
+    arrival_date_day_of_month: int
+    stays_in_weekend_nights: int
+    stays_in_week_nights: int
+    adults: int
+    children: int
+    babies: int
+    meal: str
+    country: str
+    market_segment: str
+    distribution_channel: str
+    is_repeated_guest: int
+    previous_cancellations: int
+    previous_bookings_not_canceled: int
+    reserved_room_type: str
+    assigned_room_type: str
+    booking_changes: int
+    deposit_type: str
+    agent: Optional[int] = 0
+    company: Optional[int] = 0
+    days_in_waiting_list: int
+    customer_type: str
+    adr: float
+    required_car_parking_spaces: int
+    total_of_special_requests: int
+    reservation_status: str
+    reservation_status_date: str
+    city: str
 
 
 class PredictionOutput(BaseModel):
-    predicted_goals_t_plus_1: float
+    is_canceled: int
+    cancellation_probability: float
+
 
 
 # --------------------------------------------------
@@ -70,13 +90,18 @@ def health():
 # Predict
 # --------------------------------------------------
 @app.post("/predict", response_model=PredictionOutput)
-def predict(data: PlayerInput):
+def predict(data: HotelBookingInput):
     if pipeline is None:
         raise RuntimeError("Model not loaded")
 
+    # Input → DataFrame
     df = pd.DataFrame([data.model_dump()])
+
+    # Prediction
     pred = pipeline.predict(df)[0]
+    proba = pipeline.predict_proba(df)[0][1]
 
     return PredictionOutput(
-        predicted_goals_t_plus_1=round(float(pred), 4)
+        is_canceled=int(pred),
+        cancellation_probability=round(float(proba), 4)
     )
