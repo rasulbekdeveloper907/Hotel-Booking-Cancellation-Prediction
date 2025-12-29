@@ -4,7 +4,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from pathlib import Path
 
-MODEL_PATH = Path("Models\Advanced\Stacking_Classifier_best_model.joblib")
+MODEL_PATH = Path(r"Models\Advanced\Stacking_Classifier_best_model.joblib")
 
 app = FastAPI(
     title=" Hotel Booking Cancelled Prediction API",
@@ -24,7 +24,8 @@ def load_model():
         pipeline = joblib.load(MODEL_PATH)
         print("✅ Model loaded successfully")
     except Exception as e:
-        raise RuntimeError(f"❌ Failed to load model: {e}")
+        print("❌ Failed to load model:", e)
+        pipeline = None
 
 
 # --------------------------------------------------
@@ -89,6 +90,12 @@ def health():
 # --------------------------------------------------
 # Predict
 # --------------------------------------------------
+import logging
+
+# Logging konfiguratsiyasi (server boshida)
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger(__name__)
+
 @app.post("/predict", response_model=PredictionOutput)
 def predict(data: HotelBookingInput):
     if pipeline is None:
@@ -97,11 +104,16 @@ def predict(data: HotelBookingInput):
     # Input → DataFrame
     df = pd.DataFrame([data.model_dump()])
 
-    # Prediction
-    pred = pipeline.predict(df)[0]
-    proba = pipeline.predict_proba(df)[0][1]
+    # 🔍 DEBUG: logging bilan
+    proba_all = pipeline.predict_proba(df)[0]
+    logger.debug("DEBUG predict_proba: %s", proba_all)
+
+    # Threshold bilan prediction
+    threshold = 0.25
+    pred = 1 if proba_all[1] >= threshold else 0
 
     return PredictionOutput(
-        is_canceled=int(pred),
-        cancellation_probability=round(float(proba), 4)
+        is_canceled=pred,
+        cancellation_probability=round(float(proba_all[1]), 4)
     )
+
