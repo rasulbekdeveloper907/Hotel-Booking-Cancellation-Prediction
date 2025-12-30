@@ -1,0 +1,16 @@
+venv/
+__pycache__/
+*.pyc 
+.env
+
+Data/Raw_Data/*
+Data/Preprosessed/* 
+
+Models/*
+
+!Models/Advanced/
+!Models/Advanced/Stacking_Classifier_best_model.joblib
+
+
+.DS_Store
+.ipynb_checkpoints/
