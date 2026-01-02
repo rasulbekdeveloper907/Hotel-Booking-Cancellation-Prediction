@@ -2,7 +2,7 @@ import joblib
 import pandas as pd
 import gradio as gr
 
-MODEL_PATH = "Models\Advanced\Stacking_Classifier_best_model.joblib"
+MODEL_PATH = r"../Models\Advanced\Stacking_Classifier_best_model.joblib"
 pipeline = joblib.load(MODEL_PATH)
 
 def predict(     hotel,     lead_time,     arrival_date_year,     arrival_date_month,    arrival_date_week_number,    arrival_date_day_of_month,    stays_in_weekend_nights,

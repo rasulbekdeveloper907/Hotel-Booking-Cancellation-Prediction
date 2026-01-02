@@ -4,7 +4,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from pathlib import Path
 
-MODEL_PATH = Path(r"Models\Advanced\Stacking_Classifier_best_model.joblib")
+MODEL_PATH = Path(r"../Models\Advanced\Stacking_Classifier_best_model.joblib")
 
 app = FastAPI(
     title=" Hotel Booking Cancelled Prediction API",
