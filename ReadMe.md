@@ -1,4 +1,4 @@
-# 🏨 Hotel Booking Cancellation Prediction
+# 🏨 Hotel Booking Cancellation Prediction Deep Learning & Machine Learning Project
 
 ## 📌 Loyihaning Maqsadi
 Ushbu loyiha mehmonxonalarda buyurtmalarning bekor qilinish ehtimolini bashorat qilishga qaratilgan.  
